@@ -725,6 +725,7 @@ brew`);
 				],
 				snippets : [
 					'V3_Blank',
+					'V3_DeltaGreen',
 					'V3_5ePHB',
 					'V3_5eDMG'
 				]
