@@ -84,7 +84,7 @@ body { counter-reset : page-numbers 0; }
 			color: white;
 			width: 100%;
 			text-align: center;
-			top: 91%;
+			top: 90%;
 		}
 		img { width: 100%; height: 100%; z-index : -1; }
 	}
@@ -212,8 +212,13 @@ body { counter-reset : page-numbers 0; }
 		font-size: 2.5em; 
 		color: #ec583d;
 	}
-	h4 { font-size: 1em; }
-	h5 { font-size: 0.83em; }
+	h4 { 
+		margin-top: 0.5em;
+		font-size: 1.58rem; 
+	}
+	h5 { 
+		font-size: 1em;
+	}
 
 	header {
 		column-span: all;
@@ -378,7 +383,7 @@ body { counter-reset : page-numbers 0; }
 		position              : absolute;
 		// bottom                : 50%;
 		// left                  : 50%;
-		z-index               : 1;
+		z-index               : -1;
 		top: 0;
 		left: var(--offset);
 		width                 : 130%;
@@ -505,6 +510,7 @@ body { counter-reset : page-numbers 0; }
 		left                  : calc(-50% + var(--offsetX));
 		width                 : 200%;
 		height                : 200%;
+		z-index               : -1;
 		-webkit-mask-image    : var(--wc), var(--revealer);
 		mask-image            : var(--wc), var(--revealer);
 		-webkit-mask-repeat   : no-repeat;
@@ -583,6 +589,36 @@ body { counter-reset : page-numbers 0; }
 		display     : inline;
 		margin-left : 0;
 		text-indent : 0;
+	}
+}
+
+//*****************************
+// *    NPC / CHARACTER STAT
+// *****************************/
+.page {
+	.stat {
+		font-size: 0.8rem;
+
+		h5 {
+			font-size: 1.4rem;
+		}
+
+		hr {
+    		border: none;
+    		height: 2px;
+    		background: #111;
+    		opacity: .7;
+    		margin: 0 0 3px 0;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		li {
+			padding-left: 14px;
+			text-indent: -14px;
+		}
 	}
 }
 
@@ -687,6 +723,8 @@ body { counter-reset : page-numbers 0; }
 			font-family: 'Futura Std Book', sans-serif;
 			display        : block;
 			padding-bottom : 0px;
+			font-size: 0.8rem;
+			line-height: 1.5;
 		}
 		:last-child { margin-bottom : 0; }
 	}

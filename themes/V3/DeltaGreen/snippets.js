@@ -200,7 +200,23 @@ export default [
 				gen          : indexGen,
 				experimental : true
 			},
-
+			{
+				name: 'Character',
+				icon: 'fas fa-user',
+				gen: dedent `\n
+					{{stat
+					##### Some guy
+					___
+					* *Regular person*
+					* **STR** 10 **CON** 10 **DEX** 10 **INT** 10 **POW** 10 **CHA** 10
+					* **HP** 10 **WP** 10 **SAN** 50 **Breaking Point** 40
+					* **ARMOR**: None.
+					* **BONDS, MOTIVATIONS AND DISORDERS**: 
+					* **SKILLS**: Athletics 30%, Drive 30%, Unarmed Combat 54%.
+					* **ATTACKS**: Unarmed 54%, damage 1D4+1.
+					}}\n`,
+				experimental : true
+			}
 		]
 	},
 	{
