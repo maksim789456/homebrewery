@@ -47,9 +47,10 @@ body { counter-reset : page-numbers 0; }
 		p:has(img[alt="logo"]) {
 			position: absolute;
 			z-index: -1;
-			width:70%;
-			left:50%;
-			transform:translateX(-50%) translateY(-57%)
+			width: 70%;
+			left: 50%;
+			transform:translateX(-50%) translateY(-57%);
+			filter: drop-shadow(0 0 0.75rem black);
 		}
 
 		p:has(img[alt="scrach1"]) {
@@ -85,6 +86,10 @@ body { counter-reset : page-numbers 0; }
 			width: 100%;
 			text-align: center;
 			top: 90%;
+
+			i {
+				font-style: italic;
+			}
 		}
 		img { width: 100%; height: 100%; z-index : -1; }
 	}
@@ -688,13 +693,16 @@ body { counter-reset : page-numbers 0; }
 		position    : absolute;
 		right       : 30px;
 		bottom      : 30px;
-		font-size   : 1.2em;
+		font-size   : 1.4em;
 		text-align  : center;
-		&.auto::after { content : counter(page-numbers); }
+		&.auto::after { 
+			content : counter(page-numbers);
+			transform: translateY(-10%);
+		}
 		background: rgba(245, 240, 230, 0.30);
 		border: 2px solid rgba(122, 122, 122, 0.6);
 		padding: 0.2rem 0.8rem;
-		font-family: 'Sabon LT Std';
+		font-family: 'Industria LT Std';
 	}
 
 	&:nth-child(even) {
